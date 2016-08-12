@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TheThirdTest" parallel="false">
+    <parameter name="a" value="Hello"/>
+    <parameter name="b" value="xin"/>
+    <test verbose="1" name="TheThirdTest" annotations="JDK">
+        <!--<packages>-->
+            <!--<package name="com.shuyun.common">-->
+                <!--<include name="test2"/>-->
+            <!--</package>-->
+        <!--</packages>-->
+        <classes>
+            <class name="com.shuyun.common.TestTestng">
+                <methods>
+                    <include name="test3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
